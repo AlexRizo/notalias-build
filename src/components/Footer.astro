@@ -1,0 +1,27 @@
+---
+import Ancord from "./Ancord.astro";
+---
+
+<footer>
+  <h2 class="font-bold">Get in touch</h2>
+  <div class="flex flex-row justify-between gap-4">
+    <div class="flex flex-col">
+      <Ancord href="mailto:test@gmail.com" text="Email" />
+      <Ancord href="https://wa.me/573102456789" text="Whatsapp" />
+    </div>
+    <div class="flex flex-col">
+      <Ancord href="#" text="Linkedin" />
+      <Ancord href="#" text="Instagram" />
+    </div>
+  </div>
+  <div class="flex flex-row gap-5 justify-center py-6 mt-4">
+    <p>NotAlias_</p>
+    <p>BrandStudio</p>
+    <p id="date">{new Date().getFullYear()} ©</p>
+  </div>
+</footer>
+
+<script>
+  const date = document.getElementById("date") as HTMLParagraphElement;
+  date.textContent = new Date().getFullYear() + " ©";
+</script>

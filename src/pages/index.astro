@@ -1,17 +1,32 @@
 ---
-
+import Layout from "../layout/layout.astro";
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout>
+  <section>
+    <img src="/images/hero.webp" alt="Not Alias_" />
+    <div role="contentinfo" class="flex flex-col">
+      <article class="mt-12 flex flex-col gap-6">
+        <p class="text-3xl font-bold">
+          We build brand systems for those raising the standard.
+        </p>
+        <p class="text-[15px] font-light">
+          We're a strategic branding studio for founders, innovators, and
+          leaders who understand that a brand is a living asset. We combine
+          business thinking with world-class design to build identities that
+          connect, stand out, and endure.
+        </p>
+      </article>
+      <p class="mt-6 text-[15px] font-light">
+        We're rebuilding our home.<br/>Our work speaks for itself:
+      </p>
+      <div class="flex items-center gap-4 my-10">
+        <img src="/images/svgs/open-link.svg" alt="Ir" class="mt-2" />
+        <a href="#" class="flex flex-col">
+          <p class="text-xl font-bold">Here’s a taste</p>
+          <span class="h-px w-full bg-black"></span>
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
