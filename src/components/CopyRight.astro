@@ -1,0 +1,20 @@
+---
+import { cn } from "../utils/cn";
+
+interface Props {
+  className?: string;
+}
+
+const { className } = Astro.props;
+---
+
+<div
+  class={cn(
+    "text-[15px] flex flex-row gap-5 justify-center py-6 mt-4 xl:text-xl",
+    className,
+  )}
+>
+  <p>NotAlias_</p>
+  <p>BrandStudio</p>
+  <p id="date">{new Date().getFullYear()} ©</p>
+</div>
